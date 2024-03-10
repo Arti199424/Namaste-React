@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import UserContext from "../utils/UserContext";
 import useOnlineStatus from "../utils/useOnlineStatus";
 
+
 const Body = () => {
   const [listOfRestaurants, setlistOfRestaurants] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
@@ -51,6 +52,7 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="body">
+      
       <div className="flex gap-6 p-4 m-4">
         <div className="">
           <input
